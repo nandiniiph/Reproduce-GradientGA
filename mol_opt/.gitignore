@@ -180,7 +180,6 @@ checkpoints
 molpal_out
 
 # GFlowNet
-results
 main/gflownet/results
 main/gflownet/__pycache__
 gflownet_models
