@@ -1,0 +1,13 @@
+# Gradient GA: Gradient Genetic Algorithm for Drug Molecular Design
+
+This repo is based on [https://github.com/wenhao-gao/mol_opt](https://github.com/wenhao-gao/mol_opt) Product Metric Optimization (PMO). 
+To run the code:-
+1. Install [https://github.com/wenhao-gao/mol_opt](https://github.com/wenhao-gao/mol_opt)
+2. Follow the instructions for adding a new custom method https://github.com/wenhao-gao/mol_opt/blob/main/CONTRIBUTE.md
+3. Add the files from this repo
+4. Use the method name "gradient_ga" during run
+
+We have also performed multi-objective optimization. Code is available at [https://github.com/debadyuti23/GradientGA-multiobjective](https://github.com/debadyuti23/GradientGA-multiobjective).
+
+## NOTE: 
+we haven't tested it out in wandb. Therefore would not recommend to run it for this method.
