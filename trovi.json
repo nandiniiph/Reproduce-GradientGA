@@ -1,68 +1,34 @@
-trovi artifact generate \
-  --name "Reproducing Gradient-GA for Sample-Efficient Molecular Optimization" \
-  --short-description "Reproduced code, experimental results, and analysis for Gradient-GA under GuacaMol objectives" \
-  --description "$(cat << 'EOF'
-## Overview
-
-This artifact reproduces the main experiments from the paper **Gradient-Guided Genetic Algorithms for Sample-Efficient Molecular Optimization**.
-
-We reimplemented and executed the molecular optimization pipelines to evaluate Gradient-GA and multiple baseline methods under a fixed oracle-call budget, following the original experimental protocol.
-
-**Included in this artifact:**
-* **Reproduced Code:** Full codebase used to run Gradient-GA and baseline methods.
-* **Experimental Results:** Raw YAML outputs and aggregated statistics from our runs.
-* **Analysis Scripts:** Scripts to compute AUC Top-1, Top-10, Top-100 and generate plots, heatmaps, and tables.
-* **Original Paper:** *Gradient-Guided Genetic Algorithms for Sample-Efficient Molecular Optimization*.
-
-## Reproduction Goal
-
-To validate the main claim of the paper that **incorporating gradient information accelerates convergence** in molecular optimization, measured by AUC-based metrics under a strict oracle-call budget.
-
-## Experimental Setup
-
-* **Oracle Budget:** 2500 oracle calls
-* **Runs:** 5 random seeds per method
-* **Primary Objective:** Mestranol Similarity
-* **Additional Objectives:** Amlodipine MPO, Perindopril MPO, DecoHop, Median1, Isomers (C9H10N2O2PF2Cl)
-* **Methods Evaluated:**
-  - Gradient GA
-  - Graph GA
-  - SMILES GA
-  - MARS
-  - MIMOSA
-  - DST
-
-## Experimental Results and Analysis
-
-### Figure 3: Mestranol Similarity – AUC Top-10 vs Oracle Calls
-Gradient-GA consistently achieves higher AUC Top-10 values with fewer oracle calls, indicating superior sample efficiency.
-
-### Figure 4: Mestranol Similarity – AUC Top-100 vs Oracle Calls
-Gradient-GA maintains higher AUC Top-100 scores, showing sustained population-level performance.
-
-### Figure 5: Synthetic Accessibility (SA) Heatmap
-Gradient-GA produces molecules with lower SA scores, meaning better synthesizability.
-
-### Figure 6: Diversity Heatmap
-Gradient-GA preserves higher diversity than baseline methods.
-
-Overall, these results closely match the trends reported in the original paper and confirm that gradient-guided genetic algorithms improve **sample efficiency, solution quality, and robustness**.
-
-## Metrics Reported
-
-* Average Top-10 Score
-* AUC Top-1
-* AUC Top-10
-* AUC Top-100
-
-## Environment
-
-* Python 3.9+
-* PyTorch, NumPy, RDKit, TDC
-* Fixed random seeds
-EOF
-)" \
-  --tag "reproducible research" \
-  --tag "experiment" \
-  --tag "example" \
-  --author "Nandini Putri Hanifa Jannah:nandiniputri7704@gmail.com:Universitas Jember"
+{
+  "@context": "https://w3id.org/ro/crate/1.1/context",
+  "@graph": [
+    {
+      "@id": "./",
+      "@type": "Dataset",
+      "name": "Reproducing Gradient-GA for Sample-Efficient Molecular Optimization",
+      "description": "## Overview\n\nThis artifact reproduces the main experiments from the paper **Gradient-Guided Genetic Algorithms for Sample-Efficient Molecular Optimization**.\n\nWe reimplemented and executed the molecular optimization pipelines to evaluate Gradient-GA and multiple baseline methods under a fixed oracle-call budget, following the original experimental protocol.\n\n**Included in this artifact:**\n* **Reproduced Code:** Full codebase used to run Gradient-GA and baseline methods.\n* **Experimental Results:** Raw YAML outputs and aggregated statistics from our runs.\n* **Analysis Scripts:** Scripts to compute AUC Top-1, Top-10, Top-100 and generate plots, heatmaps, and tables.\n* **Original Paper:** *Gradient-Guided Genetic Algorithms for Sample-Efficient Molecular Optimization*.\n\n## Reproduction Goal\n\nTo validate the main claim of the paper that **incorporating gradient information accelerates convergence** in molecular optimization, measured by AUC-based metrics under a strict oracle-call budget.\n\n## Experimental Setup\n\n* **Oracle Budget:** 2500 oracle calls\n* **Runs:** 5 random seeds per method\n* **Primary Objective:** Mestranol Similarity\n* **Additional Objectives:** Amlodipine MPO, Perindopril MPO, DecoHop, Median1, Isomers (C9H10N2O2PF2Cl)\n* **Methods Evaluated:**\n  - Gradient GA\n  - Graph GA\n  - SMILES GA\n  - MARS\n  - MIMOSA\n  - DST\n\n## Results\n\nGradient-GA consistently achieves higher AUC Top-10 and Top-100 scores under the same oracle-call budget, confirming improved sample efficiency and convergence speed compared to baseline methods.\n",
+      "keywords": ["reproducible research"],
+      "author": [
+        {
+          "@id": "#author_0"
+        }
+      ]
+    },
+    {
+      "@id": "trovi.json",
+      "@type": "CreativeWork",
+      "about": {
+        "@id": "./"
+      },
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.1"
+      }
+    },
+    {
+      "@id": "#author_0",
+      "@type": "Person",
+      "name": "Nandini Putri Hanifa Jannah",
+      "email": "nandiniputri7704@gmail.com",
+      "affiliation": "Universitas Jember"
+    }
+  ]
+}
