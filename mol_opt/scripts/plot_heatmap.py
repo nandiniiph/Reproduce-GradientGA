@@ -38,6 +38,9 @@ ORACLES = [
     "perindopril_mpo",
     "mestranol_similarity",
     "median1",
+    "isomers_c9h10n2o2pf2cl",
+    "deco_hop",
+    "amlodipine_mpo"
 ]
 
 SEEDS = [0, 1, 2, 3, 4]
