@@ -3,28 +3,15 @@
   "@graph": [
     {
       "@id": "./",
-      "@type": "Dataset",
-      "name": "Reproducing Gradient-GA for Sample-Efficient Molecular Optimization",
-      "description": "This artifact reproduces experiments from the paper Gradient-Guided Genetic Algorithms for Sample-Efficient Molecular Optimization. It includes reproduced code, experimental results, and analysis to evaluate Gradient-GA and baseline methods under a fixed oracle-call budget.",
-      "keywords": ["reproducible research", "experiment"],
-      "author": [
-        {
-          "@id": "#author_0"
-        }
-      ]
-    },
-    {
-      "@id": "trovi.json",
       "@type": "CreativeWork",
-      "about": {
-        "@id": "./"
-      },
-      "conformsTo": {
-        "@id": "https://w3id.org/ro/crate/1.1"
+      "name": "Reproducing Gradient-GA for Sample-Efficient Molecular Optimization",
+      "description": "Reproduction of Gradient-Guided Genetic Algorithms experiments for molecular optimization using reproduced code and experimental results.",
+      "author": {
+        "@id": "#me"
       }
     },
     {
-      "@id": "#author_0",
+      "@id": "#me",
       "@type": "Person",
       "name": "Nandini Putri Hanifa Jannah",
       "email": "nandiniputri7704@gmail.com",
