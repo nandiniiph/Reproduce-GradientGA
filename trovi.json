@@ -3,19 +3,47 @@
   "@graph": [
     {
       "@id": "./",
+      "@type": "Dataset",
+      "actionApplication": [
+        {
+          "@id": "#ChameleonJupyterLab"
+        }
+      ],
+      "author": [
+        {
+          "@id": "#author_0"
+        }
+      ],
+      "datePublished": "2026-01-14T01:00:00+00:00",
+      "description": "## Overview\n\nThis artifact reproduces the main experiments from the paper **Gradient-Guided Genetic Algorithms for Sample-Efficient Molecular Optimization**.\n\nWe reimplemented and executed the molecular optimization pipelines to evaluate Gradient-GA and multiple baseline methods under a fixed oracle-call budget.\n\n**Includes:**\n- **Reproduced Code:** Full codebase used to run Gradient-GA and baseline methods.\n- **Experimental Results:** Raw outputs and aggregated statistics from our runs.\n- **Analysis Scripts:** Scripts to compute AUC Top-1, Top-10, Top-100 and generate plots, heatmaps, and tables.\n- **Original Paper:** Gradient-Guided Genetic Algorithms for Sample-Efficient Molecular Optimization.\n\n## Reproduction Goal\n\nValidate the main claim of the paper that **incorporating gradient information accelerates convergence** in molecular optimization under a strict oracle-call budget.\n\n## Key Findings (From our experiments)\n\nOur reproduced experiments show that **Gradient-GA consistently achieves higher AUC Top-10 and Top-100 scores** with fewer oracle calls on the Mestranol Similarity objective compared to baseline genetic algorithms. Gradient-GA also maintains better diversity and synthetic accessibility, confirming the robustness and efficiency of gradient-guided optimization.\n\n## Environment and Notes\n\n- Python 3.9+\n- PyTorch, NumPy, RDKit, TDC\n- Fixed random seeds\n- Minor modifications for reproducibility and consistent logging\n",
+      "disambiguatingDescription": "Reproduced code and experimental results for Gradient-GA",
+      "keywords": "reproducible research",
+      "name": "Reproducing Gradient-GA for Sample-Efficient Molecular Optimization"
+    },
+    {
+      "@id": "trovi.json",
       "@type": "CreativeWork",
-      "name": "Reproducing Gradient-GA for Sample-Efficient Molecular Optimization",
-      "description": "Reproduction of Gradient-Guided Genetic Algorithms experiments for molecular optimization using reproduced code and experimental results.",
-      "author": {
-        "@id": "#me"
+      "about": {
+        "@id": "./"
+      },
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.1"
       }
     },
     {
-      "@id": "#me",
+      "@id": "#author_0",
       "@type": "Person",
-      "name": "Nandini Putri Hanifa Jannah",
+      "affiliation": "Universitas Jember",
       "email": "nandiniputri7704@gmail.com",
-      "affiliation": "Universitas Jember"
+      "name": "Nandini Putri Hanifa Jannah"
+    },
+    {
+      "@id": "#ChameleonJupyterLab",
+      "@type": "SoftwareApplication",
+      "name": "Chameleon JupyterLab",
+      "trovi_arguments": "{}",
+      "trovi_type": "jupyterhub",
+      "url": "https://jupyter.chameleoncloud.org/"
     }
   ]
 }
